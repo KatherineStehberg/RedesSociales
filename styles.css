@@ -47,18 +47,18 @@ nav {
     background-color: white;
     grid-area: secondary-nav;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* Cambiamos la dirección de flexión a columna */
+    align-items: flex-start; /* Alineamos los elementos al inicio */
     padding: 10px;
 }
 
 .secondary-nav ul {
     list-style: none;
-    display: flex;
+    padding: 0;
 }
 
 .secondary-nav li {
-    margin-right: 20px;
+    margin-bottom: 10px; /* Espaciado entre los elementos */
 }
 
 .round-image-button {
@@ -69,12 +69,31 @@ nav {
     border: none;
 }
 
+/* Estilo para el botón "Crear Cuenta" */
 .purple-small-button {
-    background-color: purple;
+    background-color: #CFA2E8; /* Morado claro */
     color: white;
     padding: 5px 10px;
-    border: none;
+    border: 2px solid transparent; /* Agregamos un borde transparente */
     border-radius: 5px;
+}
+
+/* Estilo para el botón "Calendario" */
+.purple-small-button:nth-of-type(2) {
+    background-color: #A491D2; /* Morado más oscuro */
+}
+
+/* Estilo para el botón "Cuentas" */
+.purple-small-button:nth-of-type(3) {
+    background-color: #FFD700; /* Amarillo */
+    color: black; /* Cambiamos el color del texto a negro para mayor contraste */
+}
+
+.login-form {
+    text-align: center;
+    border: 1px solid #ccc; /* Agregamos un borde alrededor del formulario */
+    border-radius: 5px; /* Añadimos un poco de redondez al borde */
+    padding: 20px; /* Aumentamos el relleno para espaciar el contenido del formulario */
 }
 
 section {
@@ -85,10 +104,6 @@ section {
     justify-content: center;
     align-items: center;
     padding: 20px;
-}
-
-.login-form {
-    text-align: center;
 }
 
 .social-icons {
@@ -142,4 +157,22 @@ footer {
 .socialmedia-icons i {
     margin-right: 10px;
     font-size: 24px;
+}
+
+img {
+    height: 3rem;
+}
+.light-purple {
+    background-color: #CFA2E8; /* Morado claro */
+    color: white;
+}
+
+.dark-purple {
+    background-color: #A491D2; /* Morado más oscuro */
+    color: white;
+}
+
+.yellow {
+    background-color: #FFD700; /* Amarillo */
+    color: black; /* Cambiamos el color del texto a negro para mayor contraste */
 }
