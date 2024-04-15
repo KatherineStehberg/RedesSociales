@@ -1,0 +1,145 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "secondary-nav"
+        "section"
+        "main"
+        "footer";
+    height: 100vh;
+}
+
+nav {
+    background-color: white;
+    color: #fcfcfc;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.top-nav {
+    list-style: none;
+    display: flex;
+}
+
+.top-nav li {
+    margin-right: 20px;
+}
+
+.logo-menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo-menu img {
+    width: 100px; /* Ancho deseado */
+}
+
+.secondary-nav {
+    background-color: white;
+    grid-area: secondary-nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.secondary-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.secondary-nav li {
+    margin-right: 20px;
+}
+
+.round-image-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #CA3E47;
+    border: none;
+}
+
+.purple-small-button {
+    background-color: purple;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+section {
+    background-color: #fcfbfc;
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: gray;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    color: lightblue;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.purple-button {
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: white;
+    color: #fcfcfc;
+    grid-area: footer;
+    text-align: center;
+    padding: 10px;
+}
+
+.socialmedia-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.socialmedia-icons i {
+    margin-right: 10px;
+    font-size: 24px;
+}
