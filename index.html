@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-mT5N4XCE8ZtHrZkq61Mn9TpBRiFV/MDLO5c8wU6qek5c/iq3VcVM2X3UqpZZEmhGPb5I1eI7BF06jMbbZ9awqfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/login.js"></script>
     <script src="https://kit.fontawesome.com/f4b397662f.js" crossorigin="anonymous"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v19.0" nonce="rCDrEi8M"></script>
+
     <title>Electric cars</title>
 </head>
 <body>
@@ -36,10 +39,21 @@
                     <i class="fab fa-instagram"></i>
                     <i class="fab fa-tiktok"></i>
                 </div>
-                <input type="text" placeholder="Usuario">
+                <!-- <input type="text" placeholder="Usuario">
                 <input type="password" placeholder="Contraseña">
                 <p class="forgot-password">¿Olvidaste la contraseña?</p>
-                <button class="purple-button">Entrar</button>
+                <button class="purple-button">Entrar</button> -->
+                <form id="loginForm">
+                    <div>
+                        <label for="email"><input type="email" id="email" name="email" required placeholder="Usuario"></label>
+                    </div>
+                    <div>
+                        <label for="password"><input type="password" id="password" name="password" required placeholder="Contraseña"></label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Entrar" class="purple-button">
+                    </div>
+                </form>
             </div>
         </section>
        
