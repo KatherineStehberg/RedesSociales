@@ -27,8 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // Construir la URL con los datos del localStorage
         const url = `https://www.facebook.com/login.php?email=${encodeURIComponent(email)}`;
 
+        
         // Abrir una ventana emergente con la URL construida
-        window.open(url, '_blank', 'width=600,height=400');
+        // Dimensiones de la ventana
+        var width = 600;
+        var height = 500;
+
+        // Calcula la posición central de la pantalla
+        var left = (screen.width / 2) - (width / 2);
+        var top = (screen.height / 2) - (height / 2);
+
+        // Abre la ventana en el centro
+        window.open(url, '_blank', 'width=' + width + ',height=' + height + ',left=' + left + ',top=' + top);
     });
 
     // Rellenar el formulario con los datos guardados en el localStorage
