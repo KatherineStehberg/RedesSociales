@@ -12,53 +12,46 @@ body {
         "section"
         "main"
         "footer";
-    height: 100vh;
 }
 
 nav {
     background-color: white;
     color: #fcfcfc;
-    grid-area: nav;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-}
-
-.top-nav {
-    list-style: none;
-    display: flex;
-}
-
-.top-nav li {
-    margin-right: 20px;
+    width: 100%; /* Para ocupar todo el ancho de la página */
 }
 
 .logo-menu {
-    display: flex;
-    align-items: center;
+    margin-left: 20px;
 }
 
 .logo-menu img {
-    width: 100px; /* Ancho deseado */
+    width: 100px;
 }
 
 .secondary-nav {
     background-color: white;
-    grid-area: secondary-nav;
     display: flex;
-    flex-direction: column; /* Cambiamos la dirección de flexión a columna */
-    align-items: flex-start; /* Alineamos los elementos al inicio */
+    justify-content: flex-end;
+    align-items: center;
     padding: 10px;
 }
 
 .secondary-nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .secondary-nav li {
-    margin-bottom: 10px; /* Espaciado entre los elementos */
+    margin-left: 20px;
+}
+
+.secondary-nav li:first-child {
+    margin-left: auto;
 }
 
 .round-image-button {
@@ -69,107 +62,88 @@ nav {
     border: none;
 }
 
-/* Estilo para el botón "Crear Cuenta" */
 .purple-small-button {
-    background-color: #CFA2E8; /* Morado claro */
+    background-color: #CFA2E8;
     color: white;
     padding: 5px 10px;
-    border: 2px solid transparent; /* Agregamos un borde transparente */
+    border: 2px solid transparent;
     border-radius: 5px;
 }
 
-/* Estilo para el botón "Calendario" */
-.purple-small-button:nth-of-type(2) {
-    background-color: #A491D2; /* Morado más oscuro */
-}
-
-/* Estilo para el botón "Cuentas" */
 .purple-small-button:nth-of-type(3) {
-    background-color: #FFD700; /* Amarillo */
-    color: black; /* Cambiamos el color del texto a negro para mayor contraste */
+    background-color: hwb(293 0% 0% / 0.651);
+    color: black;
+    border-radius: 20px;
+    padding:10px 20 px;
 }
 
 .login-form {
     text-align: center;
-    border: 1px solid #ccc; /* Agregamos un borde alrededor del formulario */
-    border-radius: 5px; /* Añadimos un poco de redondez al borde */
-    padding: 20px; /* Aumentamos el relleno para espaciar el contenido del formulario */
-}
-
-section {
-    background-color: #fcfbfc;
-    grid-area: section;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     padding: 20px;
+    width: 300px;
+    margin: 0 auto;
 }
 
-.social-icons {
-    margin-bottom: 20px;
+.login-form h2 {
+    color: black; /* Letra negra */
 }
 
-.social-icons i {
-    margin-right: 10px;
-    font-size: 24px;
-    color: gray;
+.login-form .subtext {
+    color: gray; /* Color gris */
+    font-size: 14px; /* Tamaño de letra más pequeño */
+    margin-bottom: 20px; /* Espacio inferior */
 }
 
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    margin-bottom: 15px;
+.gray-text {
+    color: gray; /* Color gris */
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="submit"] {
+    width: calc(100% - 22px);
     padding: 10px;
     border: 1px solid lightgray;
     border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
-.forgot-password {
-    color: lightblue;
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 20px;
-    cursor: pointer;
 }
 
-.purple-button {
-    padding: 10px 20px;
-    background-color: purple;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.instagram-signin {
+    margin-top: 20px;
+}
+
+.instagram-button {
+    background-color: transparent; /* Fondo transparente */
+    border: 1px solid lightgray; /* Borde gris claro */
+    color: black; /* Letra negra */
+    border-radius: 20px; /* Borde ovalado */
+    padding: 10px 20px; /* Padding */
+}
+
+.instagram-button i {
+    margin-right: 10px;
+}
+
+.instagram-button:hover {
+    background-color: lightgray; /* Fondo gris claro al pasar el ratón */
+    color: black; /* Letra negra */
 }
 
 footer {
     background-color: white;
     color: #fcfcfc;
-    grid-area: footer;
     text-align: center;
     padding: 10px;
-}
-
-.socialmedia-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.socialmedia-icons i {
-    margin-right: 10px;
-    font-size: 24px;
-}
-
-img {
-    height: 3rem;
-}
-.light-purple {
-    background-color: #CFA2E8; /* Morado claro */
-    color: white;
-}
-
-.dark-purple {
-    background-color: #A491D2; /* Morado más oscuro */
-    color: white;
 }
 
 .yellow {
