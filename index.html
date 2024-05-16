@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/f4b397662f.js" crossorigin="anonymous"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v19.0" nonce="rCDrEi8M"></script>
 
-    <title>Electric cars</title>
+    <title>Conecta tus Redes Sociales</title>
 </head>
 <body>
     <div class="container">
@@ -19,43 +19,39 @@
                     <img src="https://famores.com/wp-content/uploads/2024/04/Logo-Mothership.jpg" alt="Logo de coches eléctricos">
                 </a>
             </div>
-            <ul class="top-nav">
-                <li><a href="#">Mensajes</a></li>
-                <li><a href="#">Mi Perfil</a></li>
+            <ul class="secondary-nav">
+                <li><button type="button" class="btn btn-primary light-purple"><i class="fas fa-bullhorn"></i> Crear Campaña</button></li>
+                <li><button type="button" class="btn btn-primary dark-purple"><i class="fab fa-google"></i> Opiniones de Google</button></li>
+                <li><button type="button" class="btn btn-primary yellow"><i class="fas fa-cog"></i> Configuración</button></li>
             </ul>
         </nav>
-        <div class="secondary-nav">
-            <ul>
-                <li><button type="button" class="btn btn-primary light-purple">Crear Publicación</button></li>
-                <li><button type="button" class="btn btn-primary dark-purple">Calendario</button></li>
-                <li><button type="button" class="btn btn-primary yellow">Cuentas</button></li>
-            </ul>
-        </div>
         <section>
             <div class="login-form">
-                <p>Conecta tus redes sociales a Mothership</p>
-                <div class="social-icons">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-tiktok"></i>
-                </div>
-                <!-- <input type="text" placeholder="Usuario">
-                <button class="purple-button">Conectar</button> -->
-                
+                <h2>Log in to your account</h2>
+                <p class="subtext">Welcome back! Please enter your details</p>
                 <form id="loginForm">
                     <div>
-                        <label for="email"><input type="email" id="email" name="email" required placeholder="Usuario"></label>
+                        <label for="email"><span class="gray-text">Email</span></label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
                     </div>
                     <div>
-                        <label for="password"><input type="password" id="password" name="password" required placeholder="Contraseña"></label>
+                        <label for="password"><span class="gray-text">Password</span></label>
+                        <input type="password" id="password" name="password" required placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;">
                     </div>
-                    <div>
-                        <input type="submit" value="Entrar" class="purple-button">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember" class="gray-text">Remember for 30 days</label>
+                        <a href="#" class="forgot-password">Forgot Password</a>
+                    </div>
+                    <button type="submit" class="purple-button">Sign in</button>
+                    <div class="instagram-signin">
+                        <button type="button" class="instagram-button">
+                            <i class="fab fa-instagram"></i> Sign in with Instagram
+                        </button>
                     </div>
                 </form>
             </div>
         </section>
-       
         <main>
             <!-- Resto del contenido -->
         </main>
@@ -66,6 +62,9 @@
                 <i class="fab fa-instagram"></i>
             </div>
         </footer>
+    </div>
+</body>
+</html>
     </div>
 </body>
 </html>
