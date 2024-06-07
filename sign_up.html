@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sign_up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-mT5N4XCE8ZtHrZkq61Mn9TpBRiFV/MDLO5c8wU6qek5c/iq3VcVM2X3UqpZZEmhGPb5I1eI7BF06jMbbZ9awqfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/login.js"></script>
+    <script src="https://kit.fontawesome.com/f4b397662f.js" crossorigin="anonymous"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v19.0" nonce="rCDrEi8M"></script>
+
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <section class="signup-form">
+            <h2>Sign Up</h2>
+            <p class="subtext">Start your 30-day free trial</p>
+            <form id="signupForm">
+                <div>
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div>
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div>
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" name="password" required placeholder="Create a password">
+                </div>
+                <p class="login-text">Must be at least 8 characters</p>
+                <button type="submit" class="purple-button">Create account</button>
+            </form>
+            <div class="instagram-signup">
+                <button type="button" class="instagram-button">
+                    <i class="fab fa-instagram"></i> Sign Up with Instagram
+                </button>
+            </div>
+        </section>
+        <aside class="image-container">
+            <img src="https://famores.com/wp-content/uploads/2024/05/Pretty-woman-in-light-shirt-looking-at-front-1.png" alt="Pretty Woman">
+        </aside>
+    </div>
+</body>
+</html>
+
